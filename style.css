@@ -10,11 +10,36 @@
 
 body {
     background-color: #ffffff;
-  font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0 0;
+}
+.contactos{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 0px;
+}
+.telCorr{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    
+    padding: 10px 20px;
+}
+.telCorr .txt-2{
+    margin-right: 60px;
+}
+.contactos-2{
+    display: flex;
+    justify-content: space-between;
+}
+.whFaTw{
+    margin: 5px 0px 0px 80px;
+}
+.whFaTw img{
+    padding-right: 35px;
 }
 .swiper-button-prev::after{
     font-size: 25px;
@@ -37,31 +62,20 @@ body {
     background-color: #504d4d;
 }
 .menu{
+    margin-top: 40px;
     position: absolute;
     top: 0px;
     left: 0;
     right: 0;
-    display: flex;
-    justify-content: center;
     z-index: 1000;
-    border-bottom: 2px solid #8a7f7e;
-    color: #504d4d;
-    box-shadow: 5px;
-    background-color: #ffffff;
-    position: fixed;
 }
 .navbar{
+    
     display: flex;
+    float: right;
 }
 .menu-1{
-    margin-left: 10px;
-    margin-right: 180px;
     margin-top: 20px;
-}
-.menu2{
-    margin-left: 180px;
-    display: flex;
-    align-items: center;
 }
 .logo-1{
     width: 0;
@@ -71,51 +85,61 @@ body {
 }
 .logo-2{
     width: 130px;
-    position: relative;
-    left: -680px;
-    bottom: 10px;
-    margin-top: 20px;
-}
-.socials{
-    display: flex;
-    padding-top: 30px;
-}
-.social{
-    background-color: #000000;
-    margin: 0 10px;
-    height: 40px;
-    width: 40px;
-    border: 1px solid #adadad;
-    border-radius: 50%;
-}
-.social:hover{
-    background-color: #504d4d;
-}
-.social img{
-    margin: 9px 0 0 10px;
-}
+    margin: 20px 80px;
 
+}
+.video1{
+    background-color: red;
+    height: 750px;
+}
+.video1 img{
+    width: 100%;
+    height: 750px;
+}
 .menu .navbar ul li{
     position: relative;
     float: left;
-    left: 250px;
     justify-content: center;
 
 }
+.card{
+    color: #ffffff;
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    bottom: 0px;
+    left:5.5%;
+	margin-left:-25px;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 25px #222;
+    backdrop-filter: blur(20px);
+}
+.card h1{
+    font-weight: 900;
+    margin-top: -20px;
+    font-size: 120px;
+    position: absolute;
+    margin-left: 10px;
+}
+.card .txt-3{
+    padding: 85px 20px;
+}
 .menu .navbar ul li a{
-    font-size: 18px;
-    padding: 20px;
+    margin-right: 80px;
+    font-size: 15px;
+    padding-top: 50px;
     color: #000000;
     display: block;
-    border-radius: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000000;
+    transition: 1s;
     
 }
 .menu .navbar ul li a:hover{
-    color: #ffffff;
-    background-color: #181818;
+    color: #505050;
     transition: 1s;
-    transform: translateY(6px);
-    border-radius: 50px;
+    transform: translateY(3px);
 }
 #menu{
     display: none;
@@ -149,12 +173,10 @@ body {
     font-size: 50px;
     color: #ffffff;
     text-transform: uppercase;
-    font-weight: 800;
 }
 .slider-txt p{
     font-size: 18px;
     color: #f7f7f7;
-    font-weight: 800;
 }
 .botones{
     margin-top: 50px;
@@ -164,7 +186,6 @@ body {
     display: inline-block;
     padding: 15px 35px;
     color: #FFFFFF;
-    font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-right: 20px;
@@ -183,12 +204,12 @@ body {
     height: 480px;
 }
 .products{
-    background-color: #0d0d0d;
+    background-color: #000000;
 }
 .tabs{
     display: flex;
     flex-wrap: wrap;
-    padding: 100px 0px;
+    padding: 30px 0px;
 }
 .tabs label{
     width: 33%;
@@ -197,11 +218,12 @@ body {
     padding: 20px 0;
     text-align: center;
     cursor: pointer;
-    color: #A7A7A7;
+    color: #ffffff;
     font-weight: 700;
     transition: background ease 0.2s;
     font-size: 18px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 .tabs .tab{
     order: 99;
@@ -214,114 +236,85 @@ body {
     display: none;
 }
 .tabs input[type="radio"]:checked + label{
-    border-bottom: 2px solid #db241b;
-    color: #FFFFFF;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
 }
 .tabs input[type="radio"]:checked + label + .tab{
     display: block;
 }
-
+.servicios h1{
+    background-color: #000000;
+    height: 100px;
+    width: 100%;
+    color: #d3d2d2;
+    text-transform: uppercase;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 40px;
+}
 .product{
+
     display: flex;
     align-items: center;
-    padding: 25px;
-    margin: 0 10px;
+    padding: 55px;
+    margin: 5px 80px;
+    border-bottom: 5px solid #464545;
+    box-shadow: 5px 5px 10px;
+    height: 600px;
+    background-color: #353535;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 25px #222;
+    
+    transition: 1s;
+}
+.product:hover{
+    transition: 1s;
+    -webkit-transform:scale(0.96);
+    -moz-transform:scale(0.96);
+    -ms-transform:scale(0.96);
+    -o-transform:scale(0.96);
+    transform:scale(0.96);
 }
 .product-img{
-    width: 50%;
+    width: 30%;
     text-align: left;
 }
-.product-img h4{
-    display: inline-block;
-    padding: 5px 7px;
-    line-height: 15px;
-    color: #FFFFFF;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 800;
-    border: 2px solid #555555;
-    border-radius: 10px;
-    margin-bottom: 50px;
+.product-img h4:hover{
+    background-color: #8a7f7e;
+    cursor: pointer;
 }
 .product-img img{
-    width: 150px;
-    height: 120px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    
+    filter: grayscale(100%);
 }
 .product-txt{
-    width: 50%;
+    width: 70%;
     margin-left: 10px;
     text-align: left;
 }
-.product-txt h4{
-    color: #000000;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-bottom: 5px;
-}
 .product-txt p{
-    color: #000000;
-    font-size: 16px;
+    color: #ffffff;
+    font-size: 30px;
     margin-bottom: 15px;
 }
 .product-txt span{
     color: #000000;
     font-size: 18px;
-    font-weight: 800;
-}
-.info{
-    padding: 100px 0;
-    display: flex;
-    align-items: center;
-}
-.info-img{
-    width: 50%;
-}
-.info-img img{
-    width: 500px;
-    height: 250px;
-}
-.info-txt{
-    width: 50%;
-}
-.info-txt h2{
-    font-size: 75px;
-    color: #000000;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-}
-.info-txt p{
-    font-size: 18px;
-    color: #000000;
-    margin-bottom: 50px;
 }
 .btn-2{
     display: inline-block;
     padding: 15px 35px;
     background-color: #db241b;
     color: #000000;
-    font-weight: 800;
     text-transform: uppercase;
     border-radius: 50px;
 }
 .btn-2:hover{
     background-color: #7e1611;
-}
-.horario{
-    padding: 100px 0px;
-    background-color: #0d0d0d;
-}
-.horario-info h2{
-    font-size: 75px;
-    color: #000000;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-.horario-txt {
-    display: flex;
-    justify-content: space-between;
 }
 .txt{
     color: #000000;
@@ -384,6 +377,7 @@ body {
     }
     .menu .navbar ul li{
         width: 100%;
+        left: 1rem;
     }
     #menu:checked ~ .navbar{
         display: initial;
@@ -396,16 +390,17 @@ body {
         flex-direction: column;
     }
     .slider-txt{
+        margin-top: 80px;
         margin-left: 0;
-        width: 100%;
+        width: 90%;
         text-align: center;
         margin-bottom: 50px;
     }
     .slider-txt h1{
-        font-size: 50px;
+        font-size: 30px;
     }
     .slider-txt p{
-        font-size: 16px;
+        font-size: 15px;
     }
     .btn-1{
         padding: 10px 25px;
@@ -414,10 +409,11 @@ body {
     .slider-img{
         width: 100%;
         text-align: center;
+        margin-left: -80px;
     }
     .slider-img img{
         margin-right: 0;
-        width: 300px;
+        width: 500px;
     }
     .swiper-horizontal > .swiper-pagination-bullets, 
     .swiper-pagination-bullets,.swiper-pagination-horizontal,
@@ -430,40 +426,6 @@ body {
     }
     .tabs label{
         width: 33%;
-    }
-    .info{
-        padding: 30px;
-        flex-direction: column;
-    }
-    .info-img{
-        width: 100%;
-        text-align: center;
-    }
-    .info-img img{
-        width: 400px;
-        height: 200px;
-        margin-bottom: 25px;
-    }
-    .info-txt{
-        width: 100%;
-        text-align: center;
-    }
-    .info-txt h2{
-        font-size: 50px;
-    }
-    .info-txt p{
-        font-size: 16px;
-    }
-    .horario{
-        padding: 30px;
-        text-align: center;
-    }
-    .horario-info h2{
-        font-size: 50px;
-        margin-bottom: 15px;
-    }
-    .horario-txt{
-        flex-direction: column;
     }
     .socials{
         justify-content: center;
