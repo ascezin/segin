@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #080202;
+    background-color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
 .container{
@@ -23,10 +23,10 @@ body {
     font-size: 25px;
 }
 .swiper-button-next{
-    color: #db241b;
+    color: #504d4d;
 }
 .swiper-button-prev{
-    color: #db241b;
+    color: #504d4d;
 }
 
 .swiper-pagination-bullet{
@@ -34,22 +34,29 @@ body {
     opacity: 1;
 }
 .swiper-pagination-bullet-active{
-    background-color: #db241b;
+    background-color: #504d4d;
 }
 .menu{
     position: absolute;
-    top: 20px;
+    top: 0px;
     left: 0;
     right: 0;
     display: flex;
     justify-content: center;
     z-index: 1000;
+    border-bottom: 2px solid #8a7f7e;
+    color: #504d4d;
+    box-shadow: 5px;
+    background-color: #ffffff;
+    position: fixed;
 }
 .navbar{
     display: flex;
 }
 .menu-1{
+    margin-left: 10px;
     margin-right: 180px;
+    margin-top: 20px;
 }
 .menu2{
     margin-left: 180px;
@@ -59,51 +66,70 @@ body {
 .logo-1{
     width: 0;
 }
+.logo-3{
+    width: 20%;
+}
 .logo-2{
-    width: 150px;
+    width: 130px;
+    position: relative;
+    left: -680px;
+    bottom: 10px;
+    margin-top: 20px;
 }
 .socials{
     display: flex;
+    padding-top: 30px;
 }
 .social{
+    background-color: #000000;
     margin: 0 10px;
     height: 40px;
     width: 40px;
-    border: 1px solid #db241b;
+    border: 1px solid #adadad;
     border-radius: 50%;
 }
 .social:hover{
-    background-color: #db241b;
+    background-color: #504d4d;
 }
 .social img{
-    margin: 8px 0 0 10px;
+    margin: 9px 0 0 10px;
 }
 
 .menu .navbar ul li{
     position: relative;
     float: left;
+    left: 250px;
+    justify-content: center;
+
 }
 .menu .navbar ul li a{
     font-size: 18px;
     padding: 20px;
-    color: #FFFFFF;
+    color: #000000;
     display: block;
+    border-radius: 20px;
+    
 }
 .menu .navbar ul li a:hover{
-    color: #db241b;
+    color: #ffffff;
+    background-color: #181818;
+    transition: 1s;
+    transform: translateY(6px);
+    border-radius: 50px;
 }
 #menu{
     display: none;
 }
 .menu-icono{
     width: 25px;
+    background-color: #000000;
 }
 .menu label{
     cursor: pointer;
     display: none;
 }
 .header-content{
-    margin-top: 200px;
+    margin-top: 190px;
     padding-bottom: 50px;
 }
 .slider{
@@ -111,26 +137,32 @@ body {
     align-items: center;
 }
 .slider-txt{
-    margin-left: 85px;
     width: 50%;
+    margin-left: 70px;
+    position: absolute;
+    text-align: center;
+    word-wrap: break-word;
+    border-radius: 20px;
 }
 .slider-txt h1{
-    font-size: 70px;
-    color: #FFFFFF;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: 800;
 }
 .slider-txt p{
     font-size: 18px;
-    color: #A7A7A7;
+    color: #f7f7f7;
+    font-weight: 800;
 }
 .botones{
     margin-top: 50px;
 }
 .btn-1{
+    background-color: #555555;
     display: inline-block;
     padding: 15px 35px;
-    border: 2px solid #db241b;
     color: #FFFFFF;
     font-weight: 800;
     letter-spacing: 2px;
@@ -139,14 +171,16 @@ body {
     border-radius: 50px;
 }
 .btn-1:hover{
-    background-color: #db241b;
+    background-color: #000000;
 }
 .slider-img{
-    width: 50%;
+    width: 100%;
 }
 .slider-img img{
+    margin-left: 50px;
     margin-right: 225px;
-    width: 550px;
+    width: 1100px;
+    height: 480px;
 }
 .products{
     background-color: #0d0d0d;
@@ -157,10 +191,10 @@ body {
     padding: 100px 0px;
 }
 .tabs label{
-    width: 15%;
+    width: 33%;
     order: 1;
     display: block;
-    padding: 20px 0px;
+    padding: 20px 0;
     text-align: center;
     cursor: pointer;
     color: #A7A7A7;
@@ -219,19 +253,19 @@ body {
     text-align: left;
 }
 .product-txt h4{
-    color: #FFFFFF;
+    color: #000000;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 800;
     margin-bottom: 5px;
 }
 .product-txt p{
-    color: #A7A7A7;
+    color: #000000;
     font-size: 16px;
     margin-bottom: 15px;
 }
 .product-txt span{
-    color: #FFFFFF;
+    color: #000000;
     font-size: 18px;
     font-weight: 800;
 }
@@ -252,21 +286,21 @@ body {
 }
 .info-txt h2{
     font-size: 75px;
-    color: #FFFFFF;
+    color: #000000;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 25px;
 }
 .info-txt p{
     font-size: 18px;
-    color: #A7A7A7;
+    color: #000000;
     margin-bottom: 50px;
 }
 .btn-2{
     display: inline-block;
     padding: 15px 35px;
     background-color: #db241b;
-    color: #FFFFFF;
+    color: #000000;
     font-weight: 800;
     text-transform: uppercase;
     border-radius: 50px;
@@ -280,7 +314,7 @@ body {
 }
 .horario-info h2{
     font-size: 75px;
-    color: #FFFFFF;
+    color: #000000;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 50px;
@@ -290,11 +324,11 @@ body {
     justify-content: space-between;
 }
 .txt{
-    color: #FFFFFF;
+    color: #000000;
 }
 .txt h4{
     font-size: 18px;
-    color: #A7A7A7;
+    color: #000000;
     margin-bottom: 30px;    
 }
 .txt p{
@@ -307,17 +341,17 @@ body {
     filter: grayscale(100%) invert(2%) contrast(100%);
 }
 .footer{
-    padding: 100px 0px;
+    padding: 20px 0px;
     display: flex;
     justify-content: space-between;
 }
 .links h4{
-    color: #FFFFFF;
+    color: #000000;
     text-transform: uppercase;
     margin-bottom: 25px;    
 }
 .links ul li a{
-    color: #FFFFFF;
+    color: #000000;
     font-size: 16px;
     margin-bottom: 5px;
     display: inline-block;
@@ -335,7 +369,7 @@ body {
         width: 100px;
     }
     .logo-2{
-        width: 0;
+        width: 0px;
     }
     .menu label{
         display: initial;
